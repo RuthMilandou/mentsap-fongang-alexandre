@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | FONGANG ALEXANDRE RICHARD — MENTSAP & Fils • POWER GRABEE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Oswald:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="logo.png" alt="Logo MENTSAP & Fils - POWER GRABEE" />
+        <span>FONGANG ALEXANDRE</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="produits.html">Produits</a>
+        <a href="accompagnement.html">Accompagnement</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+
+      <button type="button" class="cart-link" id="openCartBtn">
+        <i class="fa-solid fa-bag-shopping"></i> Sélection (<span id="cartCount">0</span>)
+      </button>
+    </div>
+  </header>
+
+  <div class="page-banner anim-hero">
+    <div class="container">
+      <span class="badge-dynace"><i class="fa-solid fa-comments"></i> Contact Direct</span>
+      <h1>Échangeons sur vos <span class="accent-olive">Objectifs</span></h1>
+      <p>Commande de produits Dynace Global, coaching bien-être & intelligence financière ou opportunité MENTSAP & Fils — POWER GRABEE.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="contact-box reveal">
+        <div class="contact-info">
+          <h3>FONGANG ALEXANDRE RICHARD</h3>
+          <p>Contactez directement Monsieur Fongang Alexandre Richard à Pointe-Noire pour vos demandes d'information, commandes ou rendez-vous.</p>
+          <ul class="contact-list">
+            <li><i class="fa-solid fa-building"></i> MENTSAP & Fils — POWER GRABEE (DYNACE GLOBAL)</li>
+            <li><i class="fa-solid fa-location-dot"></i> Pointe-Noire, République du Congo (Congo-Brazzaville)</li>
+            <li><i class="fa-solid fa-phone"></i> <a href="tel:+242069183984">+242 06 918 3984</a></li>
+            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:fongangarichard@gmail.com">fongangarichard@gmail.com</a></li>
+          </ul>
+          <a href="https://wa.me/242069183984" target="_blank" rel="noopener" class="btn btn-dynace">
+            <i class="fa-brands fa-whatsapp"></i> Contacter sur WhatsApp
+          </a>
+        </div>
+
+        <form class="quick-form" id="demoContactForm">
+          <input type="text" id="clientName" placeholder="Votre nom complet" required />
+          <select id="clientNeed">
+            <option value="Commande de produits Dynace Global">Commander des produits Dynace Global</option>
+            <option value="Coaching Bien-être & Intelligence Financière">Coaching Bien-être & Intelligence Financière</option>
+            <option value="Marketing Relationnel — MENTSAP & Fils (POWER GRABEE)">Opportunité Marketing Relationnel — MENTSAP & Fils (POWER GRABEE)</option>
+          </select>
+          <textarea id="clientMsg" rows="4" placeholder="Précisez votre demande, vos objectifs ou les produits souhaités..." required></textarea>
+          <button type="submit" class="btn btn-dynace">
+            Envoyer ma demande sur WhatsApp <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal-backdrop" id="cartModal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3>Votre Sélection</h3>
+        <button type="button" class="close-modal" id="closeCartBtn"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <ul class="cart-items" id="cartList">
+        <li>Votre sélection est vide.</li>
+      </ul>
+      <button type="button" class="btn btn-dynace" style="width: 100%;" id="sendOrderWhatsapp">
+        <i class="fa-brands fa-whatsapp"></i> Commander cette sélection sur WhatsApp
+      </button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <img src="logo.png" alt="Logo MENTSAP & Fils - POWER GRABEE" />
+        <p>
+          <strong>FONGANG ALEXANDRE RICHARD</strong> — Expert en marketing relationnel, coach en bien-être et intelligence financière au sein de <strong>MENTSAP & Fils — POWER GRABEE</strong> (DYNACE GLOBAL).
+        </p>
+      </div>
+
+      <div>
+        <h4>Pages du site</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="produits.html">Catalogue Produits</a></li>
+          <li><a href="accompagnement.html">Accompagnement & Coaching</a></li>
+          <li><a href="contact.html">Contact Direct</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Coordonnées</h4>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-location-dot"></i> Pointe-Noire, République du Congo</li>
+          <li><i class="fa-solid fa-phone"></i> <a href="tel:+242069183984">+242 06 918 3984</a></li>
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:fongangarichard@gmail.com">fongangarichard@gmail.com</a></li>
+          <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/242069183984" target="_blank" rel="noopener">WhatsApp professionnel</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>© 2026 FONGANG ALEXANDRE RICHARD • MENTSAP & Fils — POWER GRABEE. Tous droits réservés.</span>
+        <span>Bien-être, intelligence financière & marketing relationnel.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

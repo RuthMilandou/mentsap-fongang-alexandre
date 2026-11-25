@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catalogue Produits | DYNACE GLOBAL — MENTSAP & Fils • POWER GRABEE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Oswald:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="logo.png" alt="Logo MENTSAP & Fils - POWER GRABEE" />
+        <span>FONGANG ALEXANDRE</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="produits.html" class="active">Produits</a>
+        <a href="accompagnement.html">Accompagnement</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <button type="button" class="cart-link" id="openCartBtn">
+        <i class="fa-solid fa-bag-shopping"></i> Sélection (<span id="cartCount">0</span>)
+      </button>
+    </div>
+  </header>
+
+  <div class="page-banner anim-hero">
+    <div class="container">
+      <span class="badge-dynace"><i class="fa-solid fa-leaf"></i> Catalogue Officiel Dynace Global</span>
+      <h1>Nos Produits <span class="accent-olive">DYNACE GLOBAL</span></h1>
+      <p>Filtrez par catégorie, ajoutez vos produits à votre sélection et envoyez votre demande de tarif ou commande sur WhatsApp.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="filter-bar">
+        <button type="button" class="filter-btn active" data-filter="all">Tous les produits</button>
+        <button type="button" class="filter-btn" data-filter="beaute">Beauté & Régénération</button>
+        <button type="button" class="filter-btn" data-filter="vitalite">Énergie & Vitalité</button>
+        <button type="button" class="filter-btn" data-filter="detox">Détox & Hygiène</button>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+        <article class="product-card reveal" data-category="beaute">
+          <div>
+            <span class="product-badge">Régénération Cellulaire</span>
+            <h3>DYNACE ROCENTA</h3>
+            <p>Innovation botanique fusionnée au NMN, placenta de rose de Bulgarie, extrait de germe de lotus, algues brunes et ashwagandha pour la vitalité cellulaire et l'éclat.</p>
+          </div>
+          <div class="product-actions">
+            <button type="button" class="btn btn-dynace btn-sm add-cart" data-product="Dynace Rocenta"><i class="fa-solid fa-plus"></i> Ajouter</button>
+            <a href="https://wa.me/242069183984?text=Bonjour%20Monsieur%20Fongang,%20je%20voudrais%20le%20prix%20et%20les%20infos%20sur%20Dynace%20Rocenta." target="_blank" rel="noopener" class="btn btn-gold-outline btn-sm">Infos</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal" data-category="beaute">
+          <div>
+            <span class="product-badge">Sip Sleep Shine</span>
+            <h3>DYNACE COLLAGÈNE</h3>
+            <p>Complément beauté aux peptides de collagène, NMN, extrait de nid d'oiseau, élastine, ergothionéine et GABA pour la peau, les cheveux, les ongles et la récupération nocturne.</p>
+          </div>
+          <div class="product-actions">
+            <button type="button" class="btn btn-dynace btn-sm add-cart" data-product="Dynace Collagène"><i class="fa-solid fa-plus"></i> Ajouter</button>
+            <a href="https://wa.me/242069183984?text=Bonjour%20Monsieur%20Fongang,%20je%20voudrais%20le%20prix%20et%20les%20infos%20sur%20Dynace%20Collagène." target="_blank" rel="noopener" class="btn btn-gold-outline btn-sm">Infos</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal" data-category="beaute">
+          <div>
+            <span class="product-badge">Firm Up, Spice Up</span>
+            <h3>DYNACE LYFTMAX</h3>
+            <p>Formule aux extraits naturels (EstroG 100, safran persan, algues rouges, isoflavones de soja) dédiée au bien-être féminin, à la fermeté et à la confiance.</p>
+          </div>
+          <div class="product-actions">
+            <button type="button" class="btn btn-dynace btn-sm add-cart" data-product="Dynace Lyftmax"><i class="fa-solid fa-plus"></i> Ajouter</button>
+            <a href="https://wa.me/242069183984?text=Bonjour%20Monsieur%20Fongang,%20je%20voudrais%20le%20prix%20et%20les%20infos%20sur%20Dynace%20Lyftmax." target="_blank" rel="noopener" class="btn btn-gold-outline btn-sm">Infos</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal" data-category="vitalite">
+          <div>
+            <span class="product-badge">Café Relevé, Sucre Dégonflé</span>
+            <h3>ACE BREW</h3>
+            <p>Café 100% Arabica infusé au NMN, gymnema sylvestre et extrait de fruit du moine pour l'énergie, la vitalité et la maîtrise des envies de sucre.</p>
+          </div>
+          <div class="product-actions">
+            <button type="button" class="btn btn-dynace btn-sm add-cart" data-product="Ace Brew"><i class="fa-solid fa-plus"></i> Ajouter</button>
+            <a href="https://wa.me/242069183984?text=Bonjour%20Monsieur%20Fongang,%20je%20voudrais%20le%20prix%20et%20les%20infos%20sur%20Ace%20Brew." target="_blank" rel="noopener" class="btn btn-gold-outline btn-sm">Infos</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal" data-category="vitalite">
+          <div>
+            <span class="product-badge">Café Arabica & Plantes</span>
+            <h3>TRIPLE ROOT COFFEE</h3>
+            <p>Mélange d'Arabica de première qualité avec ginseng, ashwagandha, tongkat ali et maca pour soutenir l'énergie, la concentration et la vitalité masculine.</p>
+          </div>
+          <div class="product-actions">
+            <button type="button" class="btn btn-dynace btn-sm add-cart" data-product="Triple Root Coffee"><i class="fa-solid fa-plus"></i> Ajouter</button>
+            <a href="https://wa.me/242069183984?text=Bonjour%20Monsieur%20Fongang,%20je%20voudrais%20le%20prix%20et%20les%20infos%20sur%20Triple%20Root%20Coffee." target="_blank" rel="noopener" class="btn btn-gold-outline btn-sm">Infos</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal" data-category="detox">
+          <div>
+            <span class="product-badge">Daily Synbiotic Fibre</span>
+            <h3>DYNACE DETOX</h3>
+            <p>Complément de fibres synbiotiques quotidiennes (probiotiques, prébiotiques, psyllium, inuline, FOS, konjac, argousier) pour l'équilibre intestinal et le confort digestif.</p>
+          </div>
+          <div class="product-actions">
+            <button type="button" class="btn btn-dynace btn-sm add-cart" data-product="Dynace Detox"><i class="fa-solid fa-plus"></i> Ajouter</button>
+            <a href="https://wa.me/242069183984?text=Bonjour%20Monsieur%20Fongang,%20je%20voudrais%20le%20prix%20et%20les%20infos%20sur%20Dynace%20Detox." target="_blank" rel="noopener" class="btn btn-gold-outline btn-sm">Infos</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal" data-category="detox">
+          <div>
+            <span class="product-badge">Défense & Immunité</span>
+            <h3>ACE GUARD</h3>
+            <p>Supplément quotidien aux cellules souches végétales, bêta-glucane d'algues, sureau noir, tiger milk, gymnema sylvestre et mûrier blanc pour soutenir l'immunité.</p>
+          </div>
+          <div class="product-actions">
+            <button type="button" class="btn btn-dynace btn-sm add-cart" data-product="Ace Guard"><i class="fa-solid fa-plus"></i> Ajouter</button>
+            <a href="https://wa.me/242069183984?text=Bonjour%20Monsieur%20Fongang,%20je%20voudrais%20le%20prix%20et%20les%20infos%20sur%20Ace%20Guard." target="_blank" rel="noopener" class="btn btn-gold-outline btn-sm">Infos</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal" data-category="detox">
+          <div>
+            <span class="product-badge">Smile With Confidence</span>
+            <h3>DYWACE+ (JOUR & NUIT)</h3>
+            <p>Duo de dentifrices botaniques Morning Shield (thé blanc au jasmin) et Night Restore (menthe herbal) pour la fraîcheur, la protection des gencives et l'hygiène bucco-dentaire.</p>
+          </div>
+          <div class="product-actions">
+            <button type="button" class="btn btn-dynace btn-sm add-cart" data-product="Dywace+ (Jour & Nuit)"><i class="fa-solid fa-plus"></i> Ajouter</button>
+            <a href="https://wa.me/242069183984?text=Bonjour%20Monsieur%20Fongang,%20je%20voudrais%20le%20prix%20et%20les%20infos%20sur%20Dywace+." target="_blank" rel="noopener" class="btn btn-gold-outline btn-sm">Infos</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal" data-category="vitalite">
+          <div>
+            <span class="product-badge">Routine Jour & Nuit</span>
+            <h3>SUNZ & MOONZ</h3>
+            <p>Duo complémentaire de forme et d'équilibre (Sunz au morosil, thé vert, café vert et haricot rouge ; Moonz au sinetrol, extrait de melon, vitamine C et perilla).</p>
+          </div>
+          <div class="product-actions">
+            <button type="button" class="btn btn-dynace btn-sm add-cart" data-product="Sunz & Moonz"><i class="fa-solid fa-plus"></i> Ajouter</button>
+            <a href="https://wa.me/242069183984?text=Bonjour%20Monsieur%20Fongang,%20je%20voudrais%20le%20prix%20et%20les%20infos%20sur%20Sunz%20et%20Moonz." target="_blank" rel="noopener" class="btn btn-gold-outline btn-sm">Infos</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal-backdrop" id="cartModal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3>Votre Sélection</h3>
+        <button type="button" class="close-modal" id="closeCartBtn"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <ul class="cart-items" id="cartList">
+        <li>Votre sélection est vide.</li>
+      </ul>
+      <button type="button" class="btn btn-dynace" style="width: 100%;" id="sendOrderWhatsapp">
+        <i class="fa-brands fa-whatsapp"></i> Commander cette sélection sur WhatsApp
+      </button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <img src="logo.png" alt="Logo MENTSAP & Fils - POWER GRABEE" />
+        <p>
+          <strong>FONGANG ALEXANDRE RICHARD</strong> — Expert en marketing relationnel, coach en bien-être et intelligence financière au sein de <strong>MENTSAP & Fils — POWER GRABEE</strong> (DYNACE GLOBAL).
+        </p>
+      </div>
+
+      <div>
+        <h4>Pages du site</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="produits.html">Catalogue Produits</a></li>
+          <li><a href="accompagnement.html">Accompagnement & Coaching</a></li>
+          <li><a href="contact.html">Contact Direct</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Coordonnées</h4>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-location-dot"></i> Pointe-Noire, République du Congo</li>
+          <li><i class="fa-solid fa-phone"></i> <a href="tel:+242069183984">+242 06 918 3984</a></li>
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:fongangarichard@gmail.com">fongangarichard@gmail.com</a></li>
+          <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/242069183984" target="_blank" rel="noopener">WhatsApp professionnel</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>© 2026 FONGANG ALEXANDRE RICHARD • MENTSAP & Fils — POWER GRABEE. Tous droits réservés.</span>
+        <span>Bien-être, intelligence financière & marketing relationnel.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accompagnement | MENTSAP & Fils — POWER GRABEE • FONGANG ALEXANDRE RICHARD</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Oswald:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="logo.png" alt="Logo MENTSAP & Fils - POWER GRABEE" />
+        <span>FONGANG ALEXANDRE</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="produits.html">Produits</a>
+        <a href="accompagnement.html" class="active">Accompagnement</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <button type="button" class="cart-link" id="openCartBtn">
+        <i class="fa-solid fa-bag-shopping"></i> Sélection (<span id="cartCount">0</span>)
+      </button>
+    </div>
+  </header>
+
+  <div class="page-banner anim-hero">
+    <div class="container">
+      <span class="badge-dynace"><i class="fa-solid fa-seedling"></i> MENTSAP & Fils • POWER GRABEE</span>
+      <h1>Bien-être, <span class="accent-olive">Intelligence Financière</span> & Réseau</h1>
+      <p>Un accompagnement structuré avec Fongang Alexandre Richard pour allier santé, discipline financière et développement en marketing relationnel.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="pillars-grid">
+        <div class="pillar-box reveal">
+          <div class="pillar-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+          <h3>Coaching Bien-être & Beauté</h3>
+          <p>Conseils personnalisés et cures adaptées avec la gamme officielle Dynace Global pour soutenir votre vitalité quotidienne, votre récupération et votre éclat.</p>
+        </div>
+
+        <div class="pillar-box reveal">
+          <div class="pillar-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h3>Intelligence Financière</h3>
+          <p>Accompagnement pratique sur la gestion de budget, l'épargne progressive, la planification et la création de valeur durable.</p>
+        </div>
+
+        <div class="pillar-box reveal">
+          <div class="pillar-icon"><i class="fa-solid fa-users-gear"></i></div>
+          <h3>Marketing Relationnel (POWER GRABEE)</h3>
+          <p>Formation, mentorat et structuration d'équipe au sein de MENTSAP & Fils — POWER GRABEE (Dynace Global) avec un suivi de terrain.</p>
+        </div>
+      </div>
+
+      <div class="center-cta reveal">
+        <a href="contact.html" class="btn btn-dynace">
+          Demander une séance d'échange <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal-backdrop" id="cartModal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3>Votre Sélection</h3>
+        <button type="button" class="close-modal" id="closeCartBtn"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <ul class="cart-items" id="cartList">
+        <li>Votre sélection est vide.</li>
+      </ul>
+      <button type="button" class="btn btn-dynace" style="width: 100%;" id="sendOrderWhatsapp">
+        <i class="fa-brands fa-whatsapp"></i> Commander cette sélection sur WhatsApp
+      </button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <img src="logo.png" alt="Logo MENTSAP & Fils - POWER GRABEE" />
+        <p>
+          <strong>FONGANG ALEXANDRE RICHARD</strong> — Expert en marketing relationnel, coach en bien-être et intelligence financière au sein de <strong>MENTSAP & Fils — POWER GRABEE</strong> (DYNACE GLOBAL).
+        </p>
+      </div>
+
+      <div>
+        <h4>Pages du site</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="produits.html">Catalogue Produits</a></li>
+          <li><a href="accompagnement.html">Accompagnement & Coaching</a></li>
+          <li><a href="contact.html">Contact Direct</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Coordonnées</h4>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-location-dot"></i> Pointe-Noire, République du Congo</li>
+          <li><i class="fa-solid fa-phone"></i> <a href="tel:+242069183984">+242 06 918 3984</a></li>
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:fongangarichard@gmail.com">fongangarichard@gmail.com</a></li>
+          <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/242069183984" target="_blank" rel="noopener">WhatsApp professionnel</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>© 2026 FONGANG ALEXANDRE RICHARD • MENTSAP & Fils — POWER GRABEE. Tous droits réservés.</span>
+        <span>Bien-être, intelligence financière & marketing relationnel.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
